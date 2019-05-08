@@ -103,18 +103,15 @@
 <meta property="og:site_name" content="Kandy990125">
 <meta property="og:description" content="Hexo 个人博客搭建及Hexo Next 主题个性化【小白版】目的:   搭建博客  同步Github内容到Hexo博客中  使用Next主题  个性化Hexo搭建过程参考教程： 【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析  配置环境安装环境 Windows 10  下载并安装 Node.js  &amp;amp; Git  Node.js 下载地址：Node.js下载地">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/git.PNG?raw=true">
-<meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/node.PNG?raw=true">
 <meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/gitbash.PNG?raw=true">
 <meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/new2.PNG?raw=true">
-<meta property="og:image" content="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210184948630-1789119677.png">
 <meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/githubname.PNG?raw=true">
-<meta property="og:image" content="https://pic1.zhimg.com/80/64ae4bd7d7ceed822dbf9ec14081d0e1_hd.jpg">
-<meta property="og:updated_time" content="2019-05-08T09:12:39.542Z">
+<meta property="og:image" content="https://github.com/Kandy990125/images/blob/master/next.PNG?raw=true">
+<meta property="og:updated_time" content="2019-05-08T09:28:58.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo个人博客搭建及Next主题美化教程">
 <meta name="twitter:description" content="Hexo 个人博客搭建及Hexo Next 主题个性化【小白版】目的:   搭建博客  同步Github内容到Hexo博客中  使用Next主题  个性化Hexo搭建过程参考教程： 【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析  配置环境安装环境 Windows 10  下载并安装 Node.js  &amp;amp; Git  Node.js 下载地址：Node.js下载地">
-<meta name="twitter:image" content="https://github.com/Kandy990125/images/blob/master/git.PNG?raw=true">
+<meta name="twitter:image" content="https://github.com/Kandy990125/images/blob/master/gitbash.PNG?raw=true">
 
 
 
@@ -346,7 +343,7 @@
                 
               
 
-              <time title="Erstellt: 2019-05-08 17:02:05 / Geändert am: 17:12:39" itemprop="dateCreated datePublished" datetime="2019-05-08T17:02:05+08:00">2019-05-08</time>
+              <time title="Erstellt: 2019-05-08 17:02:05 / Geändert am: 17:28:58" itemprop="dateCreated datePublished" datetime="2019-05-08T17:02:05+08:00">2019-05-08</time>
             
 
             
@@ -417,21 +414,24 @@
 <li><p><strong><strong>下载并安装 <em>Node.js</em>  &amp; <em>Git</em></strong></strong></p>
 <p> <em>Node.js</em> 下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><em>Node.js</em>下载地址</a></p>
 <p> <em>Git</em> 下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener"><em>Git</em>下载地址</a></p>
-<p> 下载完成之后，打开下载目录，点开这两个文件，一路<em>next</em> 下去</p>
-<p> <img src="https://github.com/Kandy990125/images/blob/master/git.PNG?raw=true" alt="Git">     <img src="https://github.com/Kandy990125/images/blob/master/node.PNG?raw=true" alt="node"></p>
-</li>
-</ol>
-<p>简单介绍一下这两个工具：</p>
+<p> 下载完成之后，打开下载目录，点开安装文件，完成安装过程</p>
+<p> 简单介绍一下这两个工具：</p>
 <blockquote>
 <p><em>npm</em> 是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。通过 <em>npm</em> 可以安装、共享、分发代码,管理项目依赖关系。</p>
 </blockquote>
 <blockquote>
 <p><em>Git</em> 是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。<em>Git</em> 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
 </blockquote>
-<ol start="2">
-<li><p><strong>安装 <em>Hexo</em></strong></p>
-<p> 在桌面打开 <em>Git Bash</em> 快捷方式<br> <img src="https://github.com/Kandy990125/images/blob/master/gitbash.PNG?raw=true" alt=" *Gitbash*"><br> 输入  <strong><em>npm install -g hexo-cli</em></strong><br> 关闭 <em>Git Bash</em></p>
 </li>
+<li><p><strong>安装 <em>Hexo</em></strong></p>
+<p> 在桌面打开 <em>Git Bash</em> 快捷方式</p>
+</li>
+</ol>
+<p><img src="https://github.com/Kandy990125/images/blob/master/gitbash.PNG?raw=true" alt="*Gitbash*"></p>
+<pre><code>输入  ***npm install -g hexo-cli*** 
+
+关闭 *Git Bash*
+</code></pre><ol start="3">
 <li><p><strong>初始化 <em>Hexo</em></strong></p>
 <p>同时在 <em>Hexo</em> 相关存储的位置新建一个文件夹（没有特别要求，比如我在了D:/目录下新建了一个文件夹，命名为：<em>Hexo</em>），打开文件夹目录在空白处右键选择 <em>Git Bash Here</em> </p>
 <p>输入 <strong><em>hexo init</em></strong><br>输入 <strong><em>npm install</em></strong></p>
@@ -440,8 +440,7 @@
 <p><img src="https://github.com/Kandy990125/images/blob/master/new2.PNG?raw=true" alt="初始化 *Hexo*"></p>
 <ol start="4">
 <li><p><strong>启动服务器访问<em>Hexo</em>网站</strong></p>
-<p> 输入 <strong><em>hexo s</em></strong><br> 在浏览器中输入 <strong><em>localhost:4000</em></strong><br> 成功打开 <strong><em>Hexo</em></strong> 网页<br> 下图来自：<a href="https://www.cnblogs.com/trista222/p/8017300.html" target="_blank" rel="noopener">结合hexo在GitHub上搭建个人博客全过程</a></p>
-<p> <img src="https://images2017.cnblogs.com/blog/1228928/201712/1228928-20171210184948630-1789119677.png" alt="本地*Hexo*网页"></p>
+<p> 输入 <strong><em>hexo s</em></strong><br> 在浏览器中输入 <strong><em>localhost:4000</em></strong><br> 成功打开 <strong><em>Hexo</em></strong> 网页<br> <a href="https://www.cnblogs.com/trista222/p/8017300.html" target="_blank" rel="noopener">结合hexo在GitHub上搭建个人博客全过程</a></p>
 </li>
 </ol>
 <h2 id="GithubPages"><a href="#GithubPages" class="headerlink" title="GithubPages"></a>GithubPages</h2><pre><code>将网站挂载在Github服务器上，通过&lt;Github账号&gt;.github.io访问
@@ -490,15 +489,19 @@
 <ul>
 <li><a href="https://www.zhihu.com/question/24422335/answer/46357100" target="_blank" rel="noopener">有哪些好看的<em>Hexo</em>主题</a></li>
 </ul>
-<p><strong><em>Next</em></strong> 主题下的 <strong><em>Hexo</em></strong> 网站<br><img src="https://pic1.zhimg.com/80/64ae4bd7d7ceed822dbf9ec14081d0e1_hd.jpg" alt="图片来自*zhihu*"></p>
+<p><strong><em>Next</em></strong> 主题下的 <strong><em>Hexo</em></strong> 网站<br><img src="https://github.com/Kandy990125/images/blob/master/next.PNG?raw=true" alt="***Next*** 主题下的 ***Hexo*** 网站"></p>
 <h2 id="Next-主题应用"><a href="#Next-主题应用" class="headerlink" title="Next 主题应用"></a><em>Next</em> 主题应用</h2><ol>
 <li>下载<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next主题</a></li>
 <li>解压文件夹，将文件夹复制到 <strong><em>D:/Hexo/themes/</em></strong> 目录下，重命名为 <strong><em>next</em></strong></li>
-<li>修改 <strong><em>D:/Hexo/_config.yml</em></strong>:<blockquote>
-<p>*#Extensions</p>
-</blockquote>
- ##Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a><br>##Themes: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>theme: <strong>*next2**</strong></li>
-<li>执行 <strong><em>hexo clean，hexo d -g， hexo s</em></strong>，在浏览器中输入 <strong><em>localhost:4000</em></strong> 预览是否发生变化，没有发生变化，则删除 <strong><em>D:/Hexo/public</em></strong> 文件夹，再重复输入一遍</li>
+<li><p>修改 <strong><em>D:/Hexo/_config.yml</em></strong>:<br>“”<code>Python 
+#Extensions
+##Plugins: https://hexo.io/plugins/
+##Themes: https://hexo.io/themes/
+theme: ***next2****
+&quot;</code> </p>
+</li>
+<li><p>执行 <strong><em>hexo clean，hexo d -g， hexo s</em></strong>，在浏览器中输入 <strong><em>localhost:4000</em></strong> 预览是否发生变化，没有发生变化，则删除 <strong><em>D:/Hexo/public</em></strong> 文件夹，再重复输入一遍</p>
+</li>
 <li>在浏览器中输入自己的域名，查看网页是否发生变化，如果没有发生变化，按 <strong><em>F12</em></strong>，<strong><em>F5</em></strong>，选择 <strong><em>Disable Cache</em></strong></li>
 </ol>
 <h2 id="Next-主题美化"><a href="#Next-主题美化" class="headerlink" title="Next 主题美化"></a><em>Next</em> 主题美化</h2><p>注意：每次修改后，查看自己的网页有没有改变，没有改变则执行 <strong><em>hexo clean，hexo d -g</em></strong></p>
@@ -564,6 +567,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/08/hello-world/" rel="prev" title="girls">
+                girls <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -636,7 +655,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -651,7 +670,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">Kategorien</span>
                   
                 </div>
