@@ -1773,7 +1773,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6bb3aa;
+  background: #fb5c65;
 }
 .feed-link,
 .chat {
@@ -2394,6 +2394,18 @@ embed {
   padding: 5px;
   max-width: 150px;
   background: #fff;
+}
+.custom-logo-image {
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 150px;
+  background: #fff;
+/* start*/
+  border-radius: 50%;
+  transition: 2.5s all;
+}
+.custom-logo-image:hover {
+  transform: rotate(360deg);
 }
 @media (max-width: 767px) {
   .site-nav {
