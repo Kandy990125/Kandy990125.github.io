@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang>
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -96,13 +96,16 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好了~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kandy990125&#39;s blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
+<meta property="og:site_name" content="Kandy990125&#39;s blog">
+<meta property="og:description" content="一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好了~">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Kandy990125&#39;s blog">
+<meta name="twitter:description" content="一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好了~">
 
 
 
@@ -120,7 +123,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Kandy990125's blog</title>
   
 
 
@@ -161,7 +164,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -180,7 +183,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Kandy990125's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -286,251 +289,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/ReadMe/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/07/ReadMe/" class="post-title-link" itemprop="url">Unbenannt</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Erstellt: 2019-05-07 23:30:13" itemprop="dateCreated datePublished" datetime="2019-05-07T23:30:13+08:00">2019-05-07</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="Geändert am: 2019-05-05 17:51:25" itemprop="dateModified" datetime="2019-05-05T17:51:25+08:00">2019-05-05</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="实验简介"><a href="#实验简介" class="headerlink" title="实验简介"></a>实验简介</h1><p><strong>实验目的:</strong></p>
-<blockquote>
-<p>对操作系统shell和系统调用的理解更加深刻。</p>
-</blockquote>
-<blockquote>
-<p>协调父子进程的创建与实现</p>
-</blockquote>
-<h1 id="实验设计"><a href="#实验设计" class="headerlink" title="实验设计"></a>实验设计</h1><p><strong>参数设置</strong>、<strong>完整流程图</strong>、<strong>其他主要流程</strong></p>
-<h2 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>args[MAX_LINE/2+1]</td>
-<td>指针数组</td>
-<td>命令行指针数组</td>
-</tr>
-<tr>
-<td>should_run</td>
-<td>整数型</td>
-<td>退出shell的决定标志</td>
-</tr>
-<tr>
-<td>history_real_num</td>
-<td>整数型</td>
-<td>记录一共输入了几个命令</td>
-</tr>
-<tr>
-<td>num</td>
-<td>整数型</td>
-<td>记录命令&amp;参数个数</td>
-</tr>
-<tr>
-<td>ch</td>
-<td>字符型</td>
-<td>接收输入空格和换行符的参数</td>
-</tr>
-<tr>
-<td>s[MAX_LINE]</td>
-<td>字符数组</td>
-<td>存储整个命令字符串的函数</td>
-</tr>
-<tr>
-<td>all_i</td>
-<td>整数型</td>
-<td>记录命令的长度</td>
-</tr>
-<tr>
-<td>flag</td>
-<td>整数型</td>
-<td>标记命令字符串的最后是否为&amp;</td>
-</tr>
-<tr>
-<td>flag2</td>
-<td>整数型</td>
-<td>标记是否运行了！命令和history</td>
-</tr>
-</tbody>
-</table>
-<h2 id="实验流程图"><a href="#实验流程图" class="headerlink" title="实验流程图"></a>实验流程图</h2><p><img src="https://github.com/Kandy990125/operating-system-Lab2/blob/master/%E5%9B%BE%E7%89%871.png?raw=true" alt="enter image description here"></p>
-<h1 id="实验说明"><a href="#实验说明" class="headerlink" title="实验说明"></a>实验说明</h1><h2 id="命令"><a href="#命令" class="headerlink" title="!!命令"></a>!!命令</h2><blockquote>
-<p>执行上一条命令<br>例如：输入ps、!!，则执行ps命令<br>如果直接输入!!显示：历史上不存在这样的命令</p>
-</blockquote>
-<h2 id="数字命令"><a href="#数字命令" class="headerlink" title="!+数字命令"></a>!+数字命令</h2><blockquote>
-<p>执行第i条命令<br>如果第i条命令不存在的话，显示：历史上不存在这样的命令</p>
-</blockquote>
-<h2 id="history命令"><a href="#history命令" class="headerlink" title="history命令"></a>history命令</h2><blockquote>
-<p>显示最近用户输入的十条命令</p>
-</blockquote>
-<h2 id="父进程与子进程"><a href="#父进程与子进程" class="headerlink" title="父进程与子进程"></a>父进程与子进程</h2><p>基本思路是：</p>
-<blockquote>
-<p>输入命令的过程在子进程中进行</p>
-</blockquote>
-<blockquote>
-<p>直接输入命令，则父进程等子进程运行完之后继续<br>输入命令+&amp;，则父进程和子进程同时运行</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
+      <meta itemprop="name" content="hydcoder">
+      <meta itemprop="description" content="一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好了~">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Kandy990125's blog">
     </span>
 
     
@@ -541,7 +309,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/05/07/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+                <a href="/2019/05/07/hello-world/" class="post-title-link" itemprop="url">girls</a>
               
             
           </h1>
@@ -570,6 +338,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Bearbeitet am</span>
+                
+                <time title="Geändert am: 2019-05-08 11:33:04" itemprop="dateModified" datetime="2019-05-08T11:33:04+08:00">2019-05-08</time>
+              
+            
           </span>
 
           
@@ -599,11 +383,23 @@
 
       
       
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" itemprop="contentUrl">
+            
+          
+
+          
+          </div>
+        </div>
+      
 
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+            <h2 id="girls-looks-well"><a href="#girls-looks-well" class="headerlink" title="girls looks well"></a>girls looks well</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -684,10 +480,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="John Doe">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="hydcoder">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <div class="site-description motion-element" itemprop="description"></div>
+              <p class="site-author-name" itemprop="name">hydcoder</p>
+              <div class="site-description motion-element" itemprop="description">一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好了~</div>
           </div>
 
           
@@ -697,7 +493,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -773,7 +569,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Kandy990125</span>
 
   
 
