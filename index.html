@@ -289,6 +289,177 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/save_pic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kandy990125">
+      <meta itemprop="description" content="一点点潇洒，再加一点点快乐，再写两行代码好了，顺便再追个星？一个麦不辣鸡腿堡就做好啦">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kandy990125">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/10/save_pic/" class="post-title-link" itemprop="url">追星程序媛能有多无聊之我是如何把林彦俊的400000张图片下载到电脑上的</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-10 21:22:26 / 修改时间：21:48:21" itemprop="dateCreated datePublished" datetime="2019-05-10T21:22:26+08:00">2019-05-10</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/鹅子/" itemprop="url" rel="index"><span itemprop="name">鹅子</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>因为自己的前端技能太差，所以最近想提升一下前端技能，开始学习nodejs，但是学习nodejs我得有个网站主题吧，于是，我开始想，绞尽脑汁之后，我决定，做一个鹅子的图片分享网站。但是，网络上有那————么多的鹅子相关照片，作为一个图片分享网站，数据总得全吧，于是我开始了我最熟悉的。。做！爬！虫！（逐渐跑偏），最后由于微博图床总是搞不好就会被ban掉，那么我们来把这些照片都存起来好了！<br>先放一张鹅子帅图（跑走）<br> <img src="https://github.com/Kandy990125/images/blob/master/006WOLJIly1fzhxqagtp9j32ot1sj7wh.jpg?raw=true" alt="林彦俊！帅！"></p>
+<h1 id="项目流程"><a href="#项目流程" class="headerlink" title="项目流程"></a>项目流程</h1><p> 首先讲一下项目流程，基本流程如下：</p>
+<ol>
+<li><p>从<a href="https://m.weibo.cn/u/1787296133?uid=1787296133&amp;luicode=10000011&amp;lfid=100103type%3D1%26q%3D%E6%98%9F%E9%99%85%E5%87%89%E8%8C%B6" target="_blank" rel="noopener">@星际凉茶</a>姐姐的<a href="https://m.weibo.cn/status/4328304901298403?" target="_blank" rel="noopener">置顶微博</a>爬取所有站子的uid，（跑路的站子我也记在小本本上了赫赫），以的形式进行存储。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;uname:&lt;site_name&gt;,uid:&lt;uid&gt;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>爬取每个站子发布的微博，从而获得发布微博的时间，微博内容，微博ID，微博下图片的PID，json存储。</p>
+</li>
+<li>遍历每个站子的相关微博下的PID，存储到电脑中。</li>
+<li>可以开始看鹅子的照片啦！！</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -488,7 +659,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -503,7 +674,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   
                 </div>
