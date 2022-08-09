@@ -204,7 +204,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-08-09 21:22:25 / 修改时间：22:07:34" itemprop="dateCreated datePublished" datetime="2022-08-09T21:22:25+08:00">2022-08-09</time>
+              <time title="创建时间：2022-08-09 21:22:25 / 修改时间：22:10:05" itemprop="dateCreated datePublished" datetime="2022-08-09T21:22:25+08:00">2022-08-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,47 +227,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <span id="more"></span>
-
-<h1 id="Active-Enable"><a href="#Active-Enable" class="headerlink" title="Active | Enable"></a>Active | Enable</h1><ul>
-<li>Active：控制 GameObject 激活状态的；</li>
-<li>Enable：控制 GameObject 里面的Component组件激活状态的。</li>
-</ul>
-<h1 id="Awake-OnEnable-Start"><a href="#Awake-OnEnable-Start" class="headerlink" title="Awake | OnEnable | Start"></a>Awake | OnEnable | Start</h1><h2 id="触发条件"><a href="#触发条件" class="headerlink" title="触发条件"></a>触发条件</h2><ul>
-<li>Awake：GameObject Active；</li>
-<li>OnEnable：GameObject Active；所在Script Enable；</li>
-<li>Start：GameObject Active；所在Script Enable。</li>
-</ul>
-<h2 id="调用顺序"><a href="#调用顺序" class="headerlink" title="调用顺序"></a>调用顺序</h2><p>Awake -&gt; OnEnable -&gt; Start</p>
-<h2 id="调用时间"><a href="#调用时间" class="headerlink" title="调用时间"></a>调用时间</h2><ul>
-<li>Awake：第一次 GameObject SetActive；</li>
-<li>OnEnable：每次 GameObject Active 状态或者 Script Enable 状态变化时都会被调用；</li>
-<li>Start：在 Update 第一次更新前被调用。</li>
-</ul>
-<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><ul>
-<li>Awake：初始化自身的属性；</li>
-<li>Start：初始化依赖于别的组件的属性。</li>
-</ul>
-<h1 id="FixUpdate-Update-LateUpdate"><a href="#FixUpdate-Update-LateUpdate" class="headerlink" title="FixUpdate | Update | LateUpdate"></a>FixUpdate | Update | LateUpdate</h1><p><a target="_blank" rel="noopener" href="https://docs.unity3d.com/cn/2020.3/Manual/ExecutionOrder.html" title="【Unity Doc】事件函数的执行顺序">【Unity Doc】事件函数的执行顺序</a></p>
-<h2 id="调用间隔"><a href="#调用间隔" class="headerlink" title="调用间隔"></a>调用间隔</h2><ul>
-<li>FixedUpdate：每隔固定时间调用一次；</li>
-<li>Update：每帧调用一次；</li>
-<li>LateUpdate：每帧调用一次；</li>
-</ul>
-<h2 id="调用顺序-1"><a href="#调用顺序-1" class="headerlink" title="调用顺序"></a>调用顺序</h2><p>Update &#x2F; FixedUpdate -&gt; LateUpdate</p>
-<h2 id="每帧的调用次数"><a href="#每帧的调用次数" class="headerlink" title="每帧的调用次数"></a>每帧的调用次数</h2><ul>
-<li>FixedUpdate：调用 FixedUpdate 的频度常常超过 Update。如果帧率很低，可以每帧调用该函数多次；如果帧率很高，可能在帧之间完全不调用该函数；</li>
-<li>Update：每帧调用一次；</li>
-<li>LateUpdate：每帧调用一次；</li>
-</ul>
-<h2 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h2><ul>
-<li>FixedUpdate：应用于物理碰撞和倒计时等需要精准数据的操作。<ul>
-<li>如果把物理操作放在Update中会产生抖动。原因：碰撞检测的时间是固定的，当物体发生碰撞时，如果人物未停止移动，则下一帧物体会继续移动。<br>  （Update的更新频率太快大于了碰撞检测的频率，物体已经向前移动了，但还未进行碰撞检测，因此人物会穿越过去，待碰撞检测完毕后人物又会被弹出去。）</li>
-</ul>
-</li>
-<li>LateUpdate：跟随第三人称摄像机。如果在 Update 内让角色移动和转向，可以在 LateUpdate 中执行所有摄像机移动和旋转计算。这样可以确保角色在摄像机跟踪其位置之前已完全移动。</li>
-</ul>
-
+          <p>Unity 结合官方文档对常用api进行分析。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/08/09/20220809-unity-api/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
